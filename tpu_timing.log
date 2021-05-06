@@ -1,0 +1,64 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : tpu
+Version: Q-2019.12
+Date   : Thu May  6 14:19:11 2021
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: rst (input port clocked by clk)
+  Endpoint: dataout_o_reg_0_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  tpu                tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  input external delay                     5.00       5.50 r
+  rst (in)                                 0.01       5.51 r
+  U1809/Y (CLKBUFX3)                       0.60       6.11 r
+  U3129/Y (CLKINVX1)                       0.74       6.85 f
+  U2013/Y (CLKBUFX3)                       0.36       7.21 f
+  U1995/Y (CLKBUFX3)                       0.18       7.39 f
+  U1909/Y (CLKBUFX3)                       0.18       7.57 f
+  U1901/Y (CLKBUFX3)                       0.22       7.79 f
+  U1881/Y (CLKBUFX3)                       0.27       8.06 f
+  U1810/Y (CLKBUFX3)                       0.40       8.47 f
+  U1714/Y (NAND2X1)                        0.75       9.22 r
+  U1880/Y (CLKBUFX3)                       0.83      10.05 r
+  U1811/Y (CLKBUFX3)                       0.51      10.57 r
+  U1771/Y (NOR3BX1)                        0.37      10.93 f
+  U1778/Y (AND3XL)                         0.56      11.49 f
+  U1993/Y (CLKBUFX3)                       0.81      12.30 f
+  U1992/Y (CLKBUFX3)                       0.81      13.11 f
+  U3034/Y (AOI222XL)                       0.78      13.89 r
+  U3033/Y (OAI211X1)                       0.27      14.17 f
+  dataout_o_reg_0_/D (DFFQX2)              0.00      14.17 f
+  data arrival time                                  14.17
+
+  clock clk (rise edge)                   15.00      15.00
+  clock network delay (ideal)              0.50      15.50
+  clock uncertainty                       -0.10      15.40
+  dataout_o_reg_0_/CK (DFFQX2)             0.00      15.40 r
+  library setup time                      -0.31      15.09
+  data required time                                 15.09
+  -----------------------------------------------------------
+  data required time                                 15.09
+  data arrival time                                 -14.17
+  -----------------------------------------------------------
+  slack (MET)                                         0.92
+
+
+1

@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : tpu
+Version: Q-2019.12
+Date   : Thu May  6 14:19:11 2021
+****************************************
+
+Library(s) Used:
+
+    slow (File: /home/nfs_cad/lib/CBDK_IC_Contest_v2.1/SynopsysDC/db/slow.db)
+
+Number of ports:                         1609
+Number of nets:                          6603
+Number of cells:                         4674
+Number of combinational cells:           3231
+Number of sequential cells:              1374
+Number of macros/black boxes:               0
+Number of buf/inv:                        523
+Number of references:                     111
+
+Combinational area:              40192.734510
+Buf/Inv area:                     2636.062158
+Noncombinational area:           43629.968248
+Macro/Black Box area:                0.000000
+Net Interconnect area:          599809.779938
+
+Total cell area:                 83822.702759
+Total area:                     683632.482696
+1
